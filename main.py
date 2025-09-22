@@ -181,7 +181,7 @@ class Jeu:
 
 def sauvegarder_statistiques(parties, nom_fichier="statistiques_jeu.csv"):
     # Écrit les statistiques de toutes les parties dans un CSV
-    with open(nom_fichier, 'w', newline='') as csvfile:
+    with open(nom_fichier, 'w', newline='',encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Partie', 'Bâtons initiaux', 'Premier joueur', 'Gagnant', 'Nombre de tours', 'Coups joués'])
 
